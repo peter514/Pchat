@@ -15,6 +15,7 @@ import Account from './pages/Account';
 
 function App() {
   
+  
 // Create a client
 const queryClient = new QueryClient();
 
@@ -36,6 +37,9 @@ const queryClient = new QueryClient();
       <Router>
         <QueryClientProvider client={queryClient}>
         <Routes>
+          {
+
+          }
          <Route path = '/'
          element = {<LoginPage/>}
          
