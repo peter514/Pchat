@@ -8,7 +8,7 @@ import { AiTwotoneSetting } from 'react-icons/ai'
 function SocialLinks() {
   return (
  
-      <div className='flex flex-row justify-between p-2 bg-slate-200 shadow-md md:mx-[320px] absolute bottom-1 right-0 left-0 w-[]'>
+      <div className='flex flex-row justify-between p-2 bg-slate-200 shadow-md md:mx-[320px] fixed bottom-0 right-0 left-0 w-[]'>
           <Link to='/chat-home' >
           <div className='flex justify-between items-center'>
             <span><BiHomeHeart size={25} color="#00df98" /></span>
