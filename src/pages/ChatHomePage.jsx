@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link  } from 'react-router-dom'
-import Logo from '../assets/images/logo.png'
-import { FiLogOut } from 'react-icons/fi'
 import { Helmet } from 'react-helmet'
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
 import axiosPrivate from '../api/axios'
 import { toast } from 'react-toastify'
 import PulseLoader from 'react-spinners/PulseLoader'
+import SocialLinks from '../components/SocialLinks'
+import LoginNav from '../components/LoginNav'
 
 function ChatHomePage() {
    
@@ -42,27 +42,10 @@ function ChatHomePage() {
         <title>Pchat | ChatDashboard</title>
       </Helmet>
       {/* nav bar */}
-      <div className="bg-white  md:mx-[300px] shadow-lg drop-shadow-md p-3 flex justify-between fixed top-0 right-0 left-0 ">
-        
-        <div>
-          <img src={Logo} alt="logo" className="h-[50px] w-[50px] ml-5" />
-        </div>
-
-        <div className="flex justify-center items-center gap-4 pr-2">
-          <h1>Welcome, {userData?.data?.userName}</h1>
-          <img
-            src={userData?.data?.avatar}
-            className="w-[50px] h-[50px] rounded-full"
-          />
-          <span>
-            {' '}
-            <FiLogOut size={30} color="#00df98" />
-          </span>
-        </div>
-      </div>
+      <LoginNav  userData={userData}/>
 
       {/* all users chats */}
-      <div className="mt-[70px]   p-4  h-[100vh] flex flex-col  ">
+      <div className="mt-[70px] mb-4  p-4  h-[100vh] flex flex-col  ">
         {loadingUsers ? (
           <div className="h-screen flex justify-center items-center">
             <PulseLoader color="#00df98" size={10} />
@@ -93,6 +76,9 @@ function ChatHomePage() {
           })
         )}
       </div>
+
+      <SocialLinks/>
+      
     </div>
   )
 }

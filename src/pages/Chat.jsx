@@ -49,7 +49,9 @@ function Chat() {
     data: conversationData,
     isLoading: loadingConversation,
     isError: errorConversation,
-  } = useQuery([`messages-${bothUserId}`], getConversation);
+  } = useQuery([`messages-${bothUserId}`], getConversation,{
+    refetchInterval: 1000,
+  });
   // end...................
   //  send message  function 
 const sendMessage = (message) => {
