@@ -50,7 +50,7 @@ function Posts() {
               the post caption will be here  all text
             </div>
             {/* images */}
-            <div className='flex flex-row  gap-2 overflow-x-hidden scrolling-wrapper min-h-[210px]  py-2  hover:overflow-x-auto w-[100%]  '>
+            <div className='flex flex-row  gap-2 overflow-x-auto md:overflow-x-hidden scrolling-wrapper min-h-[210px]  py-2  hover:overflow-x-auto w-[100%]  '>
               <img src="https://media.istockphoto.com/id/1299026534/photo/nairobi-kenya.webp?s=1024x1024&w=is&k=20&c=LeOxyYOOTjEZ7CxOckrR_Y9_XKRG-ldEsQi4dA_yR2M=" alt=""  className=' w- h-[200px] ' />
               <img src="https://media.istockphoto.com/id/91096995/photo/downtown-nairobi.webp?s=1024x1024&w=is&k=20&c=6BEIbiwC8nAhmp42nORN9Xb7mTt0RrqptgQa1I_vkf4=" alt=""  className=' w- h-[200px] ' />
               <img src="https://media.istockphoto.com/id/1294015814/photo/2009-nairobi-panorama.webp?s=1024x1024&w=is&k=20&c==ckIumT9_llfl_TLzL2ELOVYe_j9TopuNv8Oknc42UeA" alt="" className=' w- h-[200px] '  />
