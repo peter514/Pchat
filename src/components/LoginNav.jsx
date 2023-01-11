@@ -1,9 +1,19 @@
 import React from 'react'
 import Logo from '../assets/images/logo.png'
 import { FiLogOut } from 'react-icons/fi'
+import { toast } from 'react-toastify'
+
+import { useNavigate } from 'react-router-dom'
 
 
 function LoginNav(props) {
+  const navigate = useNavigate();
+  const logout = ()=>{
+    localStorage.clear();
+    toast.success("Loged out!")
+    navigate("/login")
+
+  }
   return (
     <div className="bg-white  md:mx-[300px] shadow-lg drop-shadow-md p-3 flex justify-between fixed top-0 right-0 left-0 ">
         
@@ -19,7 +29,7 @@ function LoginNav(props) {
           />
           <span>
             {' '}
-            <FiLogOut size={30} color="#00df98" />
+            <FiLogOut size={30} color="#00df98" onClick={logout} />
           </span>
         </div>
       </div>
