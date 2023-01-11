@@ -45,7 +45,7 @@ function ChatHomePage() {
       <LoginNav  userData={userData}/>
 
       {/* all users chats */}
-      <div className="mt-[70px] mb-4  p-4  h-[100vh] flex flex-col  ">
+      <div className="mt-[70px]  p-4  h-[100vh] flex flex-col  mb-[400px] md:mb-[400px] ">
         {loadingUsers ? (
           <div className="h-screen flex justify-center items-center">
             <PulseLoader color="#00df98" size={10} />
