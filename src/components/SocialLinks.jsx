@@ -12,28 +12,28 @@ function SocialLinks() {
           <Link to='/chat-home' >
           <div className='flex justify-between items-center'>
             <span><BiHomeHeart size={25} color="#00df98" /></span>
-            <h1 className='text-primary font-semibold'>Home</h1>
+            <h1 className=' hidden md:block text-primary font-semibold'>Home</h1>
           </div>
           </Link>
 
           <Link to="/posts">
          <div className='flex justify-between items-center'>
             <span><TiSocialInstagram size={25} color="#00df98" /></span>
-            <h1 className='text-primary font-semibold'>Posts</h1>
+            <h1 className='hidden md:block text-primary font-semibold '>Posts</h1>
           </div>
           </Link>
 
           <Link to="/add-post" >
           <div className='flex justify-between items-center'>
             <span><BiImageAdd size={25} color="#00df98" /></span>
-            <h1 className='text-primary font-semibold'>Add Post</h1>
+            <h1 className='hidden md:block md:text-primary md:font-semibold'>Add Post</h1>
           </div>
           </Link>
 
           <Link to="/account" >
           <div className='flex justify-between items-center p-1'>
             <span><AiTwotoneSetting size={25} color="#00df98" /></span>
-            <h1 className='text-primary font-semibold'>Account</h1>
+            <h1 className='hidden md:block text-primary font-semibold'>Account</h1>
           </div>
           </Link>
 
