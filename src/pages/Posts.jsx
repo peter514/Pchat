@@ -29,7 +29,7 @@ function Posts() {
        <LoginNav userData={userData}/>
 
       {/* all posts  */}
-       <div className='mt-[70px]   p-4  h-[100vh] flex flex-col mb-[340px]'>
+       <div className='mt-[70px]   p-4  h-[100vh] flex flex-col mb-[470px] md:mb-[340px]'>
           <div className='bg-gray-50 p-3 rounded-sm mb-4 shadow-md border border-gray-200 '>
             {/* caption */}
             <div className={ "flex gap-3"} >
@@ -75,7 +75,7 @@ function Posts() {
 
             </div>
           </div>
-          <div className='bg-gray-50 p-3 rounded-sm mb-4 shadow-md border border-gray-200 '>
+          <div className='bg-gray-50 p-3 rounded-sm mb-4 shadow-md border border-gray-200  '>
             {/* caption */}
             <div className={ "flex gap-3"} >
                   <div>
@@ -95,7 +95,7 @@ function Posts() {
               the post caption will be here  all text
             </div>
             {/* images */}
-            <div className='flex flex-row  gap-2 overflow-x-hidden scrolling-wrapper min-h-[210px]  py-2  hover:overflow-x-auto w-[100%]  '>
+            <div className='flex flex-row  gap-2 overflow-x-auto md:overflow-x-hidden scrolling-wrapper min-h-[210px]  py-2  hover:overflow-x-auto w-[100%]   '>
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyFmxpJGXaVrBxNUtWyHzsvXDul_Xs9WWVH5hhq7TX&s" alt=""  className=' w- h-[200px] ' />
               <img src="https://cdn.pixabay.com/photo/2017/09/21/01/42/nairobi-2770345__480.jpg" alt=""  className=' w- h-[200px] ' />
               <img src="https://media.istockphoto.com/id/1352173615/photo/nairobi-skyline.webp?s=1024x1024&w=is&k=20&c=S0zAtGEY1BUr6pl7Kx8Z5xmbWn78QrhTFvYq-iPLrM8=" alt="" className=' w- h-[200px] '  />
