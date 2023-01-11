@@ -8,6 +8,9 @@ import LoginPage from './pages/LoginPage'
 import Register from './pages/Register'
 import ChatHomePage from './pages/ChatHomePage'
 import Chat from './pages/Chat'
+import Posts from './pages/Posts';
+import AddPost from './pages/AddPost';
+import Account from './pages/Account';
 
 
 function App() {
@@ -46,6 +49,15 @@ const queryClient = new QueryClient();
 
           <Route path = 'chat-home'
          element = {<ChatHomePage/>}         
+         />
+          <Route path = 'posts'
+         element = {<Posts/>}         
+         />
+          <Route path = 'add-post'
+         element = {<AddPost/>}         
+         />
+          <Route path = 'account'
+         element = {<Account/>}         
          />
          <Route path = 'chat/:bothUserId'
          element = {<Chat/>}         
